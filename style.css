@@ -1,0 +1,79 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing :border-box;
+}
+body{
+    font-family: sans-serif;
+    height:400vh;
+    width:100%;
+}
+nav{
+    position:fixed;
+    width: 60px;
+    margin-top: 200px;
+    z-index :99;
+    opacity :0;
+}
+body:hover nav{
+    opacity: 1;
+}
+nav li{
+    height:35px;
+    position:relative;
+    border-radius: 50%;
+
+}
+nav li a{
+    color: #333;
+    display:block;
+    text-decoration: none;
+    transition: all .3s linear;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    line-height:50px;
+    padding-left: 20px;
+
+}
+
+
+nav li a i{
+    position:absolute;
+    top:4px;
+    left : 18px;
+    font-size: 22px;
+}
+nav li a span{
+    font-size: 13px;
+    letter-spacing:1px;
+    height: 35px;
+    text-transform: uppercase;
+    padding-left: 30px;
+    opacity:0;
+
+}
+a:hover{
+    width:200px;
+    border:1px solid #333;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius:25px;
+    box-shadow:2px 5px 10px rgba(0  , 0 , 0, .6)
+
+
+}
+ ul li a:hover span{
+    opacity: 1;
+
+ }
+
+ /*Scroll stuffs*/
+
+ .scroll-down nav{
+     transform: translate3d(0, -100%, 0);
+ }
+
+ .scroll-up nav{
+
+     
+ }

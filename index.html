@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    
+
+    <nav>
+        <ul>
+            <li><a href="https://www.facebook.com/ibathworld"><i class="fab fa-facebook"><span>Facebook</span></i></a></li>
+            <li><a href="https://twitter.com/ibathworld"><i class="fab fa-twitter"><span>Twitter</span></i></a></li>
+            <li><a href="https://www.instagram.com/ibathworld"><i class="fab fa-instagram"><span>Instagram</span></i></a></li>
+            <li><a href="https://www.linkedin.com/company/82165190"><i class="fab fa-linkedin"><span>LinkedIn</span></i></a></li>
+            <li><a href="https://www.pinterest.com/ibathworld"><i class="fab fa-pinterest"><span>Pinterest</span></i></a></li>
+            <li><a href="mailto:wrt2us@ibathworld.com" ><i class="fab fa-envelope"><span>Mail</span></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"><span>WhatsApp</span></i></a></li>
+        </ul>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+       const body = document.body;
+       var lastScrollTop = 0;
+       
+       window.addEventListener('scroll',()=>{
+           const currentScroll = window.pageYOffset
+
+
+
+           if(currentScroll <= 0){
+               body.classList.remove("scroll-up")
+
+           }
+           
+           if(currentScroll > lastScroll && !body.classList.contains("scroll-down")){
+               body.classList.remove("scroll-up")
+               body.classList.add("scroll-down")
+
+           }  
+
+           if(currentScroll < lastScroll && body.classList.contains("scroll-down")){
+               body.classList.remove("scroll-down")
+               body.classList.add("scroll-up")
+
+           }  
+
+           lastScroll = currentScroll;
+       })
+   </script>
+   
+</body>
+</html>
